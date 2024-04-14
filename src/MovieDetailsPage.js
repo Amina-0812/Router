@@ -36,6 +36,9 @@ const MovieDetailsPage = ({ movies }) => { //at first we define the MovieDetails
       <p>Rating: {movie.rating}</p>
         {/*creating a link to navigate back to the home page*/}
       <Link to="/" className="btn btn-primary">Previous</Link>
+      <div>
+      <iframe width="560" height="315" src={movie.trailer} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+      </div>
     </div>
   );
 };
